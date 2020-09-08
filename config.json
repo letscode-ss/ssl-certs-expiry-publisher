@@ -1,0 +1,18 @@
+{
+    "certs":
+    [
+        {
+            "name":"mock certs jks",
+            "passphrase":"changeit",
+            "path":"*/mock*.jks",
+            "type":"JKS"
+        },
+        {
+            "name":"mock certs pkcs12",
+            "passphrase":"changeit",
+            "path":"*/mock*.pkcs12",
+            "type":"PKCS"
+        }
+    ]
+}
+
