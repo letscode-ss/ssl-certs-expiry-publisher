@@ -45,7 +45,7 @@ python app.py -c <config-json-path>
 
 ### How to build the image
 ```
-docker build -t cert-checker:latest .
+docker build -t ssl-certs-expiry-publisher:latest .
 ```
 
 ### Supported certificate formats
@@ -66,11 +66,12 @@ keytool -genkey -alias mock-2 -storetype pkcs12 -keystore certs/mock-2.pkcs12 -k
 ```
 #### Build dockerfile
 ```
-docker build -t cert-checker:latest .
+docker build -t ssl-certs-expiry-publisher:latest .
 ```
 #### Run application
 ```
-docker run -it -d -p 9100:9100 cert-checker:latest
+docker run -it -d -p 9100:9100 ssl-certs-expiry-publisher:latest
+
 ```
 #### Generate metrics metrics
 ```
